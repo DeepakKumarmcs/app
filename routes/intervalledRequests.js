@@ -1,7 +1,7 @@
 var CronJob = require('cron').CronJob;
 // Setup:
 const WooCommerceRestApi = require("@woocommerce/woocommerce-rest-api").default;
-var query = require("./query");
+var query = require("../config/query");
 
 module.exports = {
     oneTimeStart: async function (req) {

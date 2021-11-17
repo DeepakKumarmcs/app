@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var query = require("./query");
+var query = require("../config/query");
 var {oneTimeStart} = require('./intervalledRequests');
 // Install:
 // npm install --save @woocommerce/woocommerce-rest-api
