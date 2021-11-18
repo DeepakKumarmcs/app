@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require('express');
 
 // Connect
-require('../db/db');
+require('../config/dbConnection');
 
 const movie = require('./movies');
 

@@ -2,7 +2,7 @@
 FROM node:16
 
 # Create app directory
-WORKDIR /genres/genere
+WORKDIR /user/src/app
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -17,6 +17,6 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 3000
+EXPOSE 8080
 
-CMD [ "node", "genere.js" ]
+CMD [ "node", "./genres/genere.js" ]
